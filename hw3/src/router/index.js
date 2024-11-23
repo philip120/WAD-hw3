@@ -1,21 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import MainPage from '../views/MainPage.vue';
-import SignupPage from '../views/SignupPage.vue';
+import MainPage from '@/views/MainPage.vue';
+import SignupPage from '@/views/SignupPage.vue';
 
-const routes = [{ 
-    path: '/',
-    name: 'main',
-    component: MainPage },
-    { path: '/signuppage',
-        name: 'signuppage',
-        component: SignupPage
-    }
+const routes = [
+  { path: '/', name: 'MainPage', component: MainPage },
+  { path: '/signup', name: 'SignupPage', component: SignupPage },
 ];
 
-// Use `routes` correctly here
 const router = createRouter({
   history: createWebHistory(),
-  routes, // <-- Make sure to include this line
+  routes,
 });
 
 export default router;
