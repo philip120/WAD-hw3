@@ -75,7 +75,9 @@ export default createStore({
       
   },
   getters: {
-    getPosts: (state) => state.postList,
+    allPosts(state) {
+      return state.postList; 
+    },
   },
   mutations: {
   },
