@@ -15,7 +15,7 @@ export default createStore({
       {
         id: 2,
         createTime: "10/20/2024",
-        image: "https://example.com/image.jpg",
+        image: "",
         content: "Does anyone know where today's workshop is being held?",
         author: "Emily Johnson",
         likes: 0,
