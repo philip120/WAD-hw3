@@ -1,7 +1,13 @@
 <template>
   <div id="main-container">
-    <div id="posts-container">
-      <!-- Posts will be dynamically loaded here -->
+    <div id="posts-container" class="post-list">
+      <h1>Post List</h1>
+      <div v-for="post in posts" :key="post.createTime" class="post-item">
+        <p><strong>{{ post.author }}</strong> - {{ post.createTime }}</p>
+        <p>{{ post.content }}</p>
+        <img v-if="post.image" :src="post.image" alt="Post image" class="post-image" />
+        <hr />
+      </div>
     </div>
   </div>
 </template>
