@@ -107,7 +107,7 @@ export default createStore({
       return state.postList; 
     },
   },
-  mutations: {
+  mutations: { // incrementing the likes of a specific post by its ID
     incrementLikes(state, postId) {
       const post = state.postList.find((post) => post.id === postId);
       if (post) {
